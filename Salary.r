@@ -41,9 +41,8 @@ plot(
   col = "blue",
   pch = 19
 )
-############################################
+
 # 5. Save scatterplot as PNG
-############################################
 
 png("scatter_salary_gpa.png", width = 800, height = 600)
 plot(
@@ -56,7 +55,6 @@ plot(
 )
 dev.off()
 
-############################################
+
 # DONE — Images saved in working directory
-############################################
 getwd()  # This shows the folder where the PNG files are saved

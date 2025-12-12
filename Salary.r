@@ -5,9 +5,6 @@ data <- read.csv("engineering_graduate_salary.csv")
 
 head(data)
 
-
-
-
 p_hist <- hist(
   data$Salary,
   main = "Distribution of Engineering Graduate Salaries",
@@ -15,7 +12,6 @@ p_hist <- hist(
   col = "skyblue",
   border = "black"
 )
-
 
 png("hist_salary.png", width = 800, height = 600)
 hist(
@@ -27,9 +23,6 @@ hist(
 )
 dev.off()
 
-
-
-
 plot(
   data$CollegeGPA, data$Salary,
   main = "Scatterplot of Salary vs College GPA",
@@ -38,8 +31,6 @@ plot(
   col = "blue",
   pch = 19
 )
-
-
 
 png("scatter_salary_gpa.png", width = 800, height = 600)
 plot(
@@ -53,5 +44,5 @@ plot(
 dev.off()
 
 
-getwd()  
+
 
